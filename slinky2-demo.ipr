@@ -308,7 +308,9 @@
         <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/functionaljava.jar!/" />
       </CLASSES>
       <JAVADOC />
-      <SOURCES />
+      <SOURCES>
+        <root url="file:///Users/glen/src/slinky2/src/main" />
+      </SOURCES>
     </library>
   </component>
 </project>
