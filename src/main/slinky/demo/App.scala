@@ -214,8 +214,8 @@ package slinky.demo
 
 
 
-import _root_.slinky.http.response.{BadRequest, NotFound, OK}
 import Function.curried
+import http.response.{BadRequest, NotFound, OK}
 import scalaz.OptionW._
 import scalaz.EitherW._
 import scalaz.StringW._

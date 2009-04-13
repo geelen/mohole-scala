@@ -265,22 +265,47 @@
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">
-    <library name="lib">
+    <library name="google app engine">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/scalaz.jar!/" />
-        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/slinky.jar!/" />
-        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/functionaljava.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/impl/appengine-local-runtime.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/orm/datanucleus-core-1.1.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/orm/jdo2-api-2.3-SNAPSHOT.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/jsp/jakarta-standard-1.1.2.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/appengine-api-1.0-sdk-1.2.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/jsp/jasper-runtime-5.0.28.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/orm/datanucleus-jpa-1.1.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/orm/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/appengine-tools-api.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/jsp/jakarta-jstl-1.1.2.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/datanucleus-enhancer-1.1.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/orm/geronimo-jpa_3.0_spec-1.1.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/geronimo-el_1.0_spec-1.0.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/asm-3.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/jsp/commons-el-1.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/appengine-local-runtime-shared.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/jsp/ant-launcher-1.6.5.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/impl/appengine-api-stubs.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/geronimo-servlet_2.5_spec-1.2.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/jsp/jasper-compiler-5.0.28.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/datanucleus-core-1.1.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/geronimo-jpa_3.0_spec-1.1.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/jdo2-api-2.3-SNAPSHOT.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/jsp/ant-1.6.5.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/impl/appengine-api.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/tools/orm/datanucleus-jpa-1.1.0.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/jsp/commons-logging-1.1.1.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/user/orm/datanucleus-appengine-1.0.0.final.jar!/" />
+        <root url="jar:///opt/appengine-java-sdk/lib/shared/geronimo-jsp_2.1_spec-1.0.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
     </library>
-    <library name="lib1">
+    <library name="slinky">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/build/lib/scala-library.jar!/" />
-        <root url="jar://$PROJECT_DIR$/build/lib/svnkit.jar!/" />
-        <root url="jar://$PROJECT_DIR$/build/lib/servlet-api.jar!/" />
-        <root url="jar://$PROJECT_DIR$/build/lib/svnkit-cli.jar!/" />
-        <root url="jar://$PROJECT_DIR$/build/lib/scala-compiler.jar!/" />
+        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/scalaz.jar!/" />
+        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/slinky.jar!/" />
+        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/functionaljava.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

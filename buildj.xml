@@ -66,13 +66,19 @@
     <filter token="build.number" value="${build.number}"/>
   </filterset>
 
-  <path id="libs.path" description="JAR files and ZIP files in the lib directory">
-    <fileset dir="${build.dir}/lib" includes="**/*.jar"/>
-    <fileset dir="${build.dir}/lib" includes="**/*.zip"/>
+  <path id="sdk.libs.path" description="JAR files from the SDK">
+    <fileset dir="/opt/appengine-java-sdk/lib/user" includes="**/*.jar"/>
   </path>
 
   <path id="webinf.libs.path" description="JAR files and ZIP files in the WEB-INF directory">
     <fileset dir="${resources.dir}/WEB-INF/lib" includes="**/*.jar"/>
+  </path>
+
+  <path id="libs.path" description="JAR files and ZIP files in the lib directory">
+    <fileset dir="${build.dir}/lib" includes="**/*.jar"/>
+    <fileset dir="${build.dir}/lib" includes="**/*.zip"/>
+    <path refid="sdk.libs.path"/>
+    <path refid="webinf.libs.path"/>
   </path>
 
   <path id="build.path" description="built class files">
@@ -92,14 +98,12 @@
   <path id="project.path" description="the project-wide path">
     <path refid="libs.path"/>
     <path refid="build.path"/>
-    <path refid="webinf.libs.path"/>
     <pathelement location="${resources.dir}"/>
     <pathelement path="${java.class.path}"/>
   </path>
 
   <path id="fast.project.path" description="the project-wide path for fast builds">
     <path refid="libs.path"/>
-    <path refid="webinf.libs.path"/>
     <path refid="build.path"/>
     <path refid="fast.build.path"/>
     <pathelement location="${resources.dir}"/>
@@ -107,19 +111,6 @@
   </path>
 
   <target name="dependencies" unless="done.dependencies" description="get dependencies">
-    <mkdir dir="${build.dir}/lib"/>
-    <get src="${software.repository.uri}/svnkit/${svnkit.version}/svnkit.jar" dest="${build.dir}/lib/svnkit.jar"
-         usetimestamp="true"/>
-    <get src="${software.repository.uri}/svnkit/${svnkit.version}/svnkit-cli.jar"
-         dest="${build.dir}/lib/svnkit-cli.jar"
-         usetimestamp="true"/>
-    <get src="${software.repository.uri}/scala/${scala.version}/${scala.lib.path}/scala-compiler.jar"
-         dest="${build.dir}/lib/scala-compiler.jar"
-         usetimestamp="true"/>
-    <get src="${software.repository.uri}/scala/${scala.version}/${scala.lib.path}/scala-library.jar"
-         dest="${build.dir}/lib/scala-library.jar"
-         usetimestamp="true"/>
-    
     <get src="${projects.repository.uri}/standards/artifacts/${standards.version}/javadoc-style/javadoc-style.css"
          dest="${build.dir}/javadoc-style.css"
          usetimestamp="true"/>
@@ -153,7 +144,10 @@
   <target name="init" depends="dependencies, layout" description="initialise the project"/>
 
   <target name="clean" description="delete the build environment">
-    <delete dir="${build.dir}"/>
+    <delete dir="${build.dir}/classes"/>
+    <delete dir="${build.dir}/src"/>
+    <delete dir="${build.dir}/test-src"/>
+    <delete dir="${build.dir}/war"/>
   </target>
 
   <macrodef name="token-filter">

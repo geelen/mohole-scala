@@ -26,10 +26,6 @@
     <import file="${sdk.dir}/config/user/ant-macros.xml"/>
 
     <target name="init" description="initialise the project">
-        <get src="${projects.repository.uri}/build/java/artifacts/${build-java.version}/buildj.xml" dest="buildj.xml"
-             usetimestamp="true"/>
-        <mkdir dir="${build.dir}/lib"/>
-        <get src="${software.repository.uri}/servlet/${servlet-api.version}/servlet-api.jar" dest="build/lib/servlet-api.jar" usetimestamp="true"/>
         <ant antfile="buildj.xml" target="init"/>
         <echo file="${etc.dir}/VERSION"
               message="Slinky Demo: ${build.number}&#010;Slinky ${slinky.version}&#10;Scalaz: ${scalaz.version}&#010;&#010;"/>
@@ -48,7 +44,6 @@
 
     <target name="clean" depends="init" description="delete the build environment">
         <ant antfile="buildj.xml" target="clean"/>
-        <delete file="buildj.xml"/>
     </target>
 
     <target name="archive" depends="init">
@@ -75,6 +70,7 @@
         </copy>
         <mkdir dir="${build.dir}/war/WEB-INF/lib"/>
         <copy file="${build.dir}/lib/scala-library.jar" todir="${build.dir}/war/WEB-INF/lib"/>
+        <compile-java src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>
         <fast-compile src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>
     </target>
 
