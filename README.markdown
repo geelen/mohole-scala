@@ -5,7 +5,7 @@ This should be buildable and deployable to google's app engine, which is pretty 
 ## What you need to do
 
   * Edit the appengine-web.xml file and make the application one of yours
-  * Have scala in /opt/scala and the app engine sdk in /opt/slinky2-appengine-demo
+  * Have scala in /opt/scala and the app engine sdk in /opt/appengine-java-sdk
   * Run ''ant deploy'' to make sure everything compiles
   * ''ant runserver'' to test locally
   * ''ant update'' to push it up to google!
