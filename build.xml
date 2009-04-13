@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+<!--
+    $LastChangedRevision: 84M $
+    $LastChangedDate: 2009-04-13 21:27:50 +1000 (Mon, 13 Apr 2009) $
+-->
+
+<project name="Slinky Demo" default="target" basedir=".">
+    <property name="build.dir" value="build"/>
+    <property name="build-java.version" value="1.55"/>
+    <property name="etc.dir" value="etc"/>
+    <property name="projects.repository.uri" value="http://projects.tmorris.net/public"/>
+    <property name="resources.dir" value="resources"/>
+    <property name="scala.lib.path" value="lib"/>
+    <property name="scaladoc.doctitle" value="Slinky Demo ${build.number} API Specification"/>
+    <property name="scaladoc.top"
+              value="&lt;div&gt;&lt;div align=&quot;right&quot;&gt;&lt;img src=&quot;http://projects.workingmouse.com/public/resources/images/logo_full_transparent.png&quot; alt=&quot;Workingmouse&quot;/&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Copyright Workingmouse Pty. Ltd. 2007, 2008&lt;/em&gt;&lt;/p&gt;This software is released under an open source BSD licence.&lt;/div&gt;"/>
+    <property name="scaladoc.windowtitle" value="Slinky Demo ${build.number}"/>
+    <property name="servlet-api.version" value="2.5"/>
+    <property name="software.repository.uri" value="http://software.tmorris.net/artifacts"/>
+    <property name="src" value="src"/>
+    <property name="src.dir" value="${src}/main"/>
+    <import file="buildj.xml" optional="true"/>
+
+    <property name="sdk.dir" location="/opt/appengine-java-sdk"/>
+    <import file="${sdk.dir}/config/user/ant-macros.xml"/>
+
+    <target name="init" description="initialise the project">
+        <get src="${projects.repository.uri}/build/java/artifacts/${build-java.version}/buildj.xml" dest="buildj.xml"
+             usetimestamp="true"/>
+        <mkdir dir="${build.dir}/lib"/>
+        <get src="${software.repository.uri}/servlet/${servlet-api.version}/servlet-api.jar" dest="build/lib/servlet-api.jar" usetimestamp="true"/>
+        <ant antfile="buildj.xml" target="init"/>
+        <echo file="${etc.dir}/VERSION"
+              message="Slinky Demo: ${build.number}&#010;Slinky ${slinky.version}&#10;Scalaz: ${scalaz.version}&#010;&#010;"/>
+    </target>
+
+    <target name="target" depends="init" description="run a given target">
+        <fail unless="t" message="Set the t property"/>
+        <ant antfile="buildj.xml" target="${t}"/>
+    </target>
+
+    <target name="test" depends="init" description="runs all tests">
+        <ant antfile="buildj.xml" target="run">
+            <property name="main" value="slinky.demo.Tests"/>
+        </ant>
+    </target>
+
+    <target name="clean" depends="init" description="delete the build environment">
+        <ant antfile="buildj.xml" target="clean"/>
+        <delete file="buildj.xml"/>
+    </target>
+
+    <target name="archive" depends="init">
+        <ant antfile="buildj.xml" target="archive"/>
+    </target>
+
+    <target name="scaladoc" depends="init">
+        <ant antfile="buildj.xml" target="scaladoc"/>
+    </target>
+
+    <target name="commit-archive" depends="init">
+        <ant antfile="buildj.xml" target="commit-archive"/>
+    </target>
+
+    <target name="version" depends="init">
+        <ant antfile="buildj.xml" target="version"/>
+    </target>
+
+    <target name="deploy" depends="fast-scalac">
+        <copy todir="${build.dir}/war">
+            <fileset dir="${resources.dir}">
+                <include name="**/**"/>
+            </fileset>
+        </copy>
+        <mkdir dir="${build.dir}/war/WEB-INF/lib"/>
+        <copy file="${build.dir}/lib/scala-library.jar" todir="${build.dir}/war/WEB-INF/lib"/>
+        <fast-compile src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>
+    </target>
+
+    <target name="datanucleusenhance" depends="deploy" description="Performs JDO enhancement on compiled data classes.">
+        <enhance_war war="${build.dir}/war"/>
+    </target>
+
+    <target name="runserver" depends="datanucleusenhance" description="Starts the development server.">
+        <dev_appserver war="${build.dir}/war"/>
+    </target>
+
+    <target name="update" depends="datanucleusenhance" description="Uploads the application to App Engine.">
+        <appcfg action="update" war="${build.dir}/war"/>
+    </target>
+
+    <target name="update_indexes" depends="datanucleusenhance" description="Uploads just the datastore index configuration to App Engine.">
+        <appcfg action="update_indexes" war="${build.dir}/war"/>
+    </target>
+
+    <target name="rollback" depends="datanucleusenhance"
+            description="Rolls back an interrupted application update.">
+        <appcfg action="rollback" war="${build.dir}/war"/>
+    </target>
+
+    <target name="request_logs" description="Downloads log data from App Engine for the application.">
+        <appcfg action="request_logs" war="${build.dir}/war">
+            <options>
+                <arg value="--num_days=5"/>
+            </options>
+            <args>
+                <arg value="logs.txt"/>
+            </args>
+        </appcfg>
+    </target>
+
+
+</project>

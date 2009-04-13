@@ -1,0 +1,4 @@
+Slinky Demo: ${build.number}
+Slinky ${slinky.version}
+Scalaz: ${scalaz.version}
+

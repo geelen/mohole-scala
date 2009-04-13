@@ -1,0 +1,149 @@
+/* Scaladoc style sheet */
+
+a:link {
+  color: #337799
+}
+
+a:visited {
+  color: #1a446b
+}
+
+a:active {
+	color: #9999bb
+}
+
+body {
+	background-color: #ffffff;
+  font-family: 12px/normal verdana, arial, helvetica, sans-serif
+}
+
+div.entity {
+	margin: 18px 0 18px 0;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+div.doctitle {
+	font-weight: bold;
+	font-style: italic;
+}
+
+div.doctitle-larger {
+	margin: 0 0 10px 0;
+	font-size: larger;
+	font-weight: bold;
+}
+
+div.kinds {
+	margin: 0.6em 0 0 0; /* top right bottom left */
+	font-weight: bold;
+}
+
+div.page-title {
+	margin: 15px 0 15px 0;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.source {
+	font-size: smaller;
+	color: gray;
+}
+
+span.entity {
+	color: #336666;
+}
+
+table.member {
+	margin: 0 0 1.2em 0; /* top rigth bottom left */
+	border-collapse: collapse;
+	border: 2px inset #888888;
+	width: 100%;  
+}
+
+table.member td.title {
+	border: 2px inset #888888;
+	background-color: #AADDDD;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+table.inherited {
+	margin: 0 0 1.2em 0; /* top rigth bottom left */
+	border-collapse: collapse;
+	border: 2px inset #888888;
+	width: 100%;
+}
+
+table.inherited td.title {
+	background-color: #AADDDD;
+	font-weight: bold;
+}
+
+table.member-detail {
+	margin: 10px 0 0 0;
+	border-collapse: collapse;
+	border: 2px inset #888888;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+table.member-detail td.title {
+	border: 2px inset #888888;
+	background-color: #AADDDD;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+table.navigation {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: Arial,Helvetica,Sans-Serif;
+}
+
+td.inherited-members {
+	border-top: 2px inset #888888;
+	border-right: 0;
+}
+
+td.inherited-owner {
+	background-color: #eeeeff;
+	font-weight: bold;
+}
+
+td.modifiers {
+	border-top: 2px inset #888888;
+        border-right: 2px inset #888888;
+	width: 50px;
+	text-align: right;
+}
+
+td.navigation-enabled {
+	font-weight: bold;
+	color: #000000;
+	background-color: #eeeeff;
+}
+
+td.navigation-links {
+	width: 100%;
+	background-color: #AADDDD;
+}
+
+td.navigation-selected {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #00008b;
+}
+
+td.signature {
+	border-top: 2px inset #888888;
+	width: 90%;
+}
+
+ul.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
