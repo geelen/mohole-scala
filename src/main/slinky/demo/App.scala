@@ -34,10 +34,10 @@ final class App extends StreamStreamServletApplication {
 
 import scalaz.CharSet.ISO8859
 import slinky.http.servlet.HttpServletRequest.c
- 
+
 object App {
   implicit val charSet = ISO8859
-  
+
   def app(implicit request: Request[Stream], servletRequest: HttpServletRequest) =
     c[Stream](request) match {
       // 200 OK Say hello with XHTML Transitional
@@ -64,12 +64,31 @@ object App {
       }
 
       // Display the details of the request.
-      case Path(p) if p != "/norequest" => Some(request.debug[Stream](_.map(_.toChar).mkString))
+      case Path(p) if p != "/norequest" => {
+//        Some(request.debug[Stream](_.map(_.toChar).mkString))
+        Some(OK(ContentType, "text/html") << transitional << record(request, p))
+      }
 
       // Look for a resource with the given URI path.
       // If the resource does not exist, then 404 Not Found.
       case _ => None
     }
+
+//  def record[A](request: Request[Stream], a: A) = doc("Slinky Demo", a)
+
+  def record(request: Request[Stream], a: String) = {
+    val c = <div>
+      {
+        List(("Method", request.method),
+           ("URI Path", request.uri.path.mkString),
+           ("URI Query String", request.uri.queryString map (_.mkString) getOrElse <i>N/A</i>)).map {
+        case (k, v) =>
+          <div>{ k }</div>
+          <h4>{ v }</h4>
+      } }
+    </div>
+    doc("Recording your requests!", c)
+  }
 
   def say[A](a: A) = doc("Slinky Demo", a)
 
