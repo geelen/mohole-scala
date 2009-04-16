@@ -7,6 +7,7 @@ import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
+import java.util.Date;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public final class RequestObj {
@@ -20,9 +21,13 @@ public final class RequestObj {
     @Persistent
     private User user;
 
-    public RequestObj(final String content, final User user) {
+    @Persistent
+    private Date date;
+
+    public RequestObj(final String content, final User user, Date date) {
         this.content = content;
         this.user = user;
+        this.date = date;
     }
 
     public String getContent() {
@@ -31,5 +36,9 @@ public final class RequestObj {
 
     public User getUser() {
         return user;
+    }
+
+    public Date getDate() {
+        return date;
     }
 }

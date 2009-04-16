@@ -1,6 +1,7 @@
 package slinky.demo
 
 import Function.curried
+import java.util.Date
 import java.util.logging.Logger
 import scalaz.OptionW._
 import scalaz.EitherW._
@@ -79,17 +80,20 @@ object App {
 //  def record[A](request: Request[Stream], a: A) = doc("Slinky Demo", a)
 
   def record(request: Request[Stream], a: String) = {
-    val c = <div><div>
+    val path = request.uri.path.mkString
+    Edge.save(new RequestObj(path, null, new Date()))
+    val query = "select from " + classOf[RequestObj].getName + " order by date desc range 0,10"
+    val c = <div><div><h3>Last few requests!</h3>
       {
-        Edge.execList[RequestObj]("select from " + classOf[RequestObj].getName + " range 0,10").map((r: RequestObj) => {
+        Edge.execList[RequestObj](query).map((r: RequestObj) => {
           <p>{ r.getUser }<strong>
           { r.getContent }</strong></p>
         })
       }
-    </div><div>
+    </div><hr/><p>This request</p><div>
       {
         List(("Method", request.method),
-           ("URI Path", request.uri.path.mkString),
+           ("URI Path", path),
            ("URI Query String", request.uri.queryString map (_.mkString) getOrElse <i>N/A</i>)).map {
         case (k, v) =>
           <div>{ k }</div>
