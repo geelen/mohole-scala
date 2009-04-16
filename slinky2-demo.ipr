@@ -8,7 +8,35 @@
   </component>
   <component name="CodeStyleSettingsManager">
     <option name="PER_PROJECT_SETTINGS">
-      <value />
+      <value>
+        <ADDITIONAL_INDENT_OPTIONS fileType="java">
+          <option name="INDENT_SIZE" value="4" />
+          <option name="CONTINUATION_INDENT_SIZE" value="8" />
+          <option name="TAB_SIZE" value="4" />
+          <option name="USE_TAB_CHARACTER" value="false" />
+          <option name="SMART_TABS" value="false" />
+          <option name="LABEL_INDENT_SIZE" value="0" />
+          <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+        </ADDITIONAL_INDENT_OPTIONS>
+        <ADDITIONAL_INDENT_OPTIONS fileType="jsp">
+          <option name="INDENT_SIZE" value="4" />
+          <option name="CONTINUATION_INDENT_SIZE" value="8" />
+          <option name="TAB_SIZE" value="4" />
+          <option name="USE_TAB_CHARACTER" value="false" />
+          <option name="SMART_TABS" value="false" />
+          <option name="LABEL_INDENT_SIZE" value="0" />
+          <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+        </ADDITIONAL_INDENT_OPTIONS>
+        <ADDITIONAL_INDENT_OPTIONS fileType="xml">
+          <option name="INDENT_SIZE" value="4" />
+          <option name="CONTINUATION_INDENT_SIZE" value="8" />
+          <option name="TAB_SIZE" value="4" />
+          <option name="USE_TAB_CHARACTER" value="false" />
+          <option name="SMART_TABS" value="false" />
+          <option name="LABEL_INDENT_SIZE" value="0" />
+          <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+        </ADDITIONAL_INDENT_OPTIONS>
+      </value>
     </option>
     <option name="USE_PER_PROJECT_SETTINGS" value="false" />
   </component>
@@ -300,8 +328,12 @@
         <root url="jar:///opt/appengine-java-sdk/lib/user/orm/datanucleus-appengine-1.0.0.final.jar!/" />
         <root url="jar:///opt/appengine-java-sdk/lib/shared/geronimo-jsp_2.1_spec-1.0.1.jar!/" />
       </CLASSES>
-      <JAVADOC />
-      <SOURCES />
+      <JAVADOC>
+        <root url="file:///opt/appengine-java-sdk/docs/javadoc" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file:///opt/appengine-java-sdk/src" />
+      </SOURCES>
     </library>
     <library name="slinky">
       <CLASSES>
@@ -312,6 +344,17 @@
       <JAVADOC />
       <SOURCES>
         <root url="file:///Users/glen/src/slinky2/src/main" />
+      </SOURCES>
+    </library>
+    <library name="scalaz">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/scalaz.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file:///opt/scalaz/javadoc" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file:///opt/scalaz/src" />
       </SOURCES>
     </library>
   </component>

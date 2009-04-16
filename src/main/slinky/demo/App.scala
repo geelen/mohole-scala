@@ -1,6 +1,7 @@
 package slinky.demo
 
 import Function.curried
+import java.util.logging.Logger
 import scalaz.OptionW._
 import scalaz.EitherW._
 import scalaz.StringW._
@@ -37,6 +38,7 @@ import slinky.http.servlet.HttpServletRequest.c
 
 object App {
   implicit val charSet = ISO8859
+  val logger: Logger = Logger.getLogger(classOf[App].getName)
 
   def app(implicit request: Request[Stream], servletRequest: HttpServletRequest) =
     c[Stream](request) match {
@@ -77,7 +79,14 @@ object App {
 //  def record[A](request: Request[Stream], a: A) = doc("Slinky Demo", a)
 
   def record(request: Request[Stream], a: String) = {
-    val c = <div>
+    val c = <div><div>
+      {
+        Edge.execList[RequestObj]("select from " + classOf[RequestObj].getName + " range 0,10").map((r: RequestObj) => {
+          <p>{ r.getUser }<strong>
+          { r.getContent }</strong></p>
+        })
+      }
+    </div><div>
       {
         List(("Method", request.method),
            ("URI Path", request.uri.path.mkString),
@@ -86,7 +95,7 @@ object App {
           <div>{ k }</div>
           <h4>{ v }</h4>
       } }
-    </div>
+    </div></div>
     doc("Recording your requests!", c)
   }
 

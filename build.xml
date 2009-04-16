@@ -68,6 +68,11 @@
                 <include name="**/**"/>
             </fileset>
         </copy>
+        <copy todir="${build.dir}/war/WEB-INF/lib" flatten="true">            
+            <fileset dir="${sdk.dir}/lib/user">
+                <include name="**/*.jar"/>
+            </fileset>
+        </copy>
         <mkdir dir="${build.dir}/war/WEB-INF/lib"/>
         <copy file="${build.dir}/lib/scala-library.jar" todir="${build.dir}/war/WEB-INF/lib"/>
         <compile-java src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>

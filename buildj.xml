@@ -137,7 +137,7 @@
     <mkdir dir="${package-info.dir}"/>
     <touch file="archive.properties" millis="0"/>
     <touch file="tokens.properties" millis="0"/>
-    <touch file="${resources.dir}/META-INF/MANIFEST.MF" mkdirs="true" millis="0"/>
+    <touch file="resources/WEB-INF/classes/META-INF/MANIFEST.MF" mkdirs="true" millis="0"/>
     <property name="done.layout" value="true"/>
   </target>
 

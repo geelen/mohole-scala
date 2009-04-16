@@ -1,6 +1,6 @@
 package slinky.demo;
 
-import slinky.http.Date;
+import com.google.appengine.api.users.User;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
@@ -18,10 +18,18 @@ public final class RequestObj {
     private String content;
 
     @Persistent
-    private Date date;
+    private User user;
 
-    public RequestObj(final String content, final Date date) {
+    public RequestObj(final String content, final User user) {
         this.content = content;
-        this.date = date;
+        this.user = user;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public User getUser() {
+        return user;
     }
 }

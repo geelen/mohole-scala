@@ -16,6 +16,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="google app engine" level="project" />
     <orderEntry type="library" name="slinky" level="project" />
+    <orderEntry type="library" name="scalaz" level="project" />
   </component>
 </module>
 
