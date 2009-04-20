@@ -62,7 +62,7 @@
         <ant antfile="buildj.xml" target="version"/>
     </target>
 
-    <target name="deploy" depends="fast-scalac">
+    <target name="deploy" depends="scalac">
         <copy todir="${build.dir}/war">
             <fileset dir="${resources.dir}">
                 <include name="**/**"/>
