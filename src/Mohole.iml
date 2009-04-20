@@ -4,7 +4,7 @@
     <facet type="Scala" name="Scala">
       <configuration />
     </facet>
-    <facet type="web" name="Web">
+    <facet type="web" name="Web2">
       <configuration>
         <descriptors>
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../resources/WEB-INF/web.xml" optional="false" version="2.5" />
