@@ -1,14 +1,17 @@
-package slinky.demo
+package scails.edge
 
 import collection.jcl.Conversions
 import java.util.logging.Logger
+import javax.jdo.JDOHelper
 import scalaz.OptionW
+import slinky.demo.PMF
 
 //get rid of this and it fails below... :|
-class Edge
+class JDO
 
-object Edge {
-  val logger = Logger.getLogger(classOf[Edge].getName)
+object JDO {
+  val logger = Logger.getLogger(classOf[JDO].getName)
+  val pmfInstance = JDOHelper.getPersistenceManagerFactory("transactions-optional");  
 
   def exec[A](query: String): A = try {
     PMF.pmfInstance.getPersistenceManager.newQuery(query).execute().asInstanceOf[A]
