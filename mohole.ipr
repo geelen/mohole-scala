@@ -250,7 +250,7 @@
     </group>
   </component>
   <component name="ProjectDetails">
-    <option name="projectName" value="slinky2-demo" />
+    <option name="projectName" value="mohole" />
   </component>
   <component name="ProjectFileVersion" converted="true">
     <converter id="javaee-modules" />
@@ -343,7 +343,7 @@
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="file:///Users/glen/src/slinky2/src/main" />
+        <root url="file://$PROJECT_DIR$/src/main" />
       </SOURCES>
     </library>
     <library name="scalaz">
