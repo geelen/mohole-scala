@@ -258,11 +258,11 @@
     <converter id="SelenaRunConfToDiana" />
   </component>
   <component name="ProjectKey">
-    <option name="state" value="project:///Users/glen/src/slinky2-demo/slinky2-demo.ipr" />
+    <option name="state" value="project:///Users/glen/src/mohole-scala/mohole.ipr" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/Slinky2-demo.iml" filepath="$PROJECT_DIR$/src/Slinky2-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Mohole.iml" filepath="$PROJECT_DIR$/src/Mohole.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
@@ -329,10 +329,10 @@
         <root url="jar:///opt/appengine-java-sdk/lib/shared/geronimo-jsp_2.1_spec-1.0.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="file:///opt/appengine-java-sdk/docs/javadoc" />
+        <root url="file:///opt/appengine-java-sdk-1.2.0/docs/javadoc" />
       </JAVADOC>
       <SOURCES>
-        <root url="file:///opt/appengine-java-sdk/src" />
+        <root url="file:///opt/appengine-java-sdk-1.2.0/src" />
       </SOURCES>
     </library>
     <library name="slinky">
