@@ -9,7 +9,7 @@ object Script extends ResourceFactory {
     val name = "scripts"
 
     def list = {
-      OK(ContentType, "text/html") << transitional << Utils.say("hello")
+      Utils.say("hello")
     }
   }
 }
