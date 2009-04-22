@@ -341,13 +341,12 @@
     </library>
     <library name="slinky">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/scalaz.jar!/" />
         <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/slinky.jar!/" />
         <root url="jar://$PROJECT_DIR$/resources/WEB-INF/lib/functionaljava.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="file://$PROJECT_DIR$/src/main" />
+        <root url="file:///Users/glen/src/slinky2/src/main" />
       </SOURCES>
     </library>
     <library name="scalaz">
