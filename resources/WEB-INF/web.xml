@@ -9,7 +9,7 @@
     <servlet-class>slinky.http.servlet.StreamStreamServlet</servlet-class>
     <init-param>
       <param-name>application</param-name>
-      <param-value>scails.demo.App</param-value>
+      <param-value>mohole.App</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>

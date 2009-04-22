@@ -2,9 +2,10 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scails/demo/App.scala" afterPath="$PROJECT_DIR$/src/main/scails/demo/App.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/resources/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mohole.iws" afterPath="$PROJECT_DIR$/mohole.iws" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/slinky/demo/App.scala" afterPath="$PROJECT_DIR$/src/main/scails/demo/App.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/mohole/App.scala" afterPath="$PROJECT_DIR$/src/main/mohole/App.scala" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="slinky2-demo.iws" />
@@ -84,7 +85,25 @@
       <file leaf-file-name="App.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scails/demo/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="14" selection-start="806" selection-end="806" vertical-scroll-proportion="-0.8974359">
+            <state line="20" column="0" selection-start="859" selection-end="859" vertical-scroll-proportion="0.23076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mohole/App.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScailsApp.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scails/ScailsApp.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="69" selection-start="32" selection-end="86" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -401,6 +420,10 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="resources" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="style" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -726,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mohole/App.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scails/Resource.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="6" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
@@ -756,7 +772,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scails/ScailsApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+        <state line="3" column="69" selection-start="32" selection-end="86" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mohole/App.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -779,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scails/demo/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="806" selection-end="806" vertical-scroll-proportion="-0.8974359">
+        <state line="20" column="0" selection-start="859" selection-end="859" vertical-scroll-proportion="0.23076923">
           <folding />
         </state>
       </provider>
