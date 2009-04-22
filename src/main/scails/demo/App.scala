@@ -1,4 +1,4 @@
-package slinky.demo
+package scails.demo
 
 import Function.curried
 import java.util.Date
@@ -7,16 +7,16 @@ import scalaz.OptionW._
 import scalaz.EitherW._
 import scalaz.StringW._
 import scalaz.control.MonadW.{EitherMonad, OptionMonad, EitherLeftMonad, ListMonad}
-import http.servlet.{HttpServlet, HttpServletRequest, ServletApplication, StreamStreamServletApplication}
-import http.servlet.HttpServlet._
-import http.servlet.StreamStreamServletApplication.resourceOr
-import http.{Application, ContentType}
-import http.StreamStreamApplication._
-import http.request.Request.Stream.{MethodPath, Path}
-import http.request.{Request, GET}
-import http.response.{OK, NotFound, BadRequest}
-import http.response.xhtml.Doctype.{transitional, strict}
-import http.response.StreamResponse.{response, statusLine}
+import slinky.http.servlet.{HttpServlet, HttpServletRequest, ServletApplication, StreamStreamServletApplication}
+import slinky.http.servlet.HttpServlet._
+import slinky.http.servlet.StreamStreamServletApplication.resourceOr
+import slinky.http.{Application, ContentType}
+import slinky.http.StreamStreamApplication._
+import slinky.http.request.Request.Stream.{MethodPath, Path}
+import slinky.http.request.{Request, GET}
+import slinky.http.response.{OK, NotFound, BadRequest}
+import slinky.http.response.xhtml.Doctype.{transitional, strict}
+import slinky.http.response.StreamResponse.{response, statusLine}
 
 final class App extends StreamStreamServletApplication {
   import App._
