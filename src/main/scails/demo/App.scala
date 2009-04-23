@@ -30,7 +30,7 @@ class App(redirects: Map[String, String], resources: Resources) extends StreamSt
 
   val application = new ServletApplication[Stream, Stream] {
     def application(implicit servlet: HttpServlet, servletRequest: HttpServletRequest, request: Request[Stream]) =
-      app getOrElse resource(x => OK << Stream.fromIterator(x), NotFound.xhtml << transitional << Utils.say("Where does it lie?"))
+      app(redirects: Map[String, String], resources: Resources) getOrElse resource(x => OK << Stream.fromIterator(x), NotFound.xhtml << transitional << Utils.say("Where does it lie?"))
   }
 }
 
@@ -41,8 +41,9 @@ object App {
   implicit val charSet = ISO8859
   val logger: Logger = Logger.getLogger(classOf[App].getName)
 
-  def app(implicit request: Request[Stream], servletRequest: HttpServletRequest) =
-    c[Stream](request) match {
+  def app(redirects: Map[String, String], resources: Resources)(implicit request: Request[Stream], servletRequest: HttpServletRequest) = {
+    val lol = c[Stream](request)
+    lol match {
       // 200 OK Say hello with XHTML Transitional
       case MethodPath(GET, "/hello") =>
         Some(OK(ContentType, "text/html") << transitional << Utils.say("hello"))
@@ -59,6 +60,10 @@ object App {
 
       // Look for a resource with the given URI path.
       // If the resource does not exist, then 404 Not Found.
-      case _ => None
+      case _ => {
+        None
+//        redirects.find((a: (String, String)) => )
+      }
     }
+  }
 }

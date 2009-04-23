@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scails/demo/App.scala" afterPath="$PROJECT_DIR$/src/main/scails/demo/App.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/resources/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mohole.iws" afterPath="$PROJECT_DIR$/mohole.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/mohole/App.scala" afterPath="$PROJECT_DIR$/src/main/mohole/App.scala" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -82,10 +83,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scails/demo/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="859" selection-end="859" vertical-scroll-proportion="0.23076923">
+            <state line="67" column="3" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="39" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.813986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buildj.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buildj.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="302" column="75" selection-start="13081" selection-end="13105" vertical-scroll-proportion="-9.884615">
               <folding />
             </state>
           </provider>
@@ -686,20 +705,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/response/Status.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="18" selection-start="6209" selection-end="6209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/resources/WEB-INF/lib/slinky.jar!/slinky/http/response/xhtml/Doctype.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/local/share/scala/src/scala-library-src.jar!/scala/Option.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="41" selection-start="4538" selection-end="4538" vertical-scroll-proportion="0.0">
@@ -802,7 +807,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scails/demo/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="859" selection-end="859" vertical-scroll-proportion="0.23076923">
+        <state line="67" column="3" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildj.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="302" column="75" selection-start="13081" selection-end="13105" vertical-scroll-proportion="-9.884615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="39" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.813986">
           <folding />
         </state>
       </provider>

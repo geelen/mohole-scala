@@ -63,20 +63,25 @@
     </target>
 
     <target name="deploy" depends="scalac">
+        <copy todir="${build.dir}/war/WEB-INF/classes">
+            <fileset dir="${build.dir}/classes/src">
+                <include name="**/*.class"/>
+            </fileset>
+        </copy>
         <copy todir="${build.dir}/war">
             <fileset dir="${resources.dir}">
                 <include name="**/**"/>
             </fileset>
         </copy>
+        <mkdir dir="${build.dir}/war/WEB-INF/lib"/>
         <copy todir="${build.dir}/war/WEB-INF/lib" flatten="true">            
             <fileset dir="${sdk.dir}/lib/user">
                 <include name="**/*.jar"/>
             </fileset>
         </copy>
-        <mkdir dir="${build.dir}/war/WEB-INF/lib"/>
         <copy file="${build.dir}/lib/scala-library.jar" todir="${build.dir}/war/WEB-INF/lib"/>
-        <compile-java src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>
-        <fast-compile src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>
+        <!--<compile-java src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>-->
+        <!--<fast-compile src="${src.dir}" classes="${build.dir}/war/WEB-INF/classes" classpath="fast.project.path"/>-->
     </target>
 
     <target name="datanucleusenhance" depends="deploy" description="Performs JDO enhancement on compiled data classes.">
