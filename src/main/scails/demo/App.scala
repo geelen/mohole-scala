@@ -60,10 +60,7 @@ object App {
 
       // Look for a resource with the given URI path.
       // If the resource does not exist, then 404 Not Found.
-      case _ => {
-        None
-//        redirects.find((a: (String, String)) => )
-      }
+      case _ => Some(OK(ContentType, "text/html") << transitional << ScailsHandler.go(redirects, resources)(lol))
     }
   }
 }
