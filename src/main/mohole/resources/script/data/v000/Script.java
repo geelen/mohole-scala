@@ -1,4 +1,4 @@
-package mohole.resources.script.data;
+package mohole.resources.script.data.v000;
 
 import com.google.appengine.api.users.User;
 

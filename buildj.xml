@@ -141,7 +141,7 @@
     <property name="done.layout" value="true"/>
   </target>
 
-  <target name="init" depends="dependencies, layout" description="initialise the project"/>
+  <target name="init" depends="layout" description="initialise the project"/>
 
   <target name="clean" description="delete the build environment">
     <delete dir="${build.dir}/classes"/>

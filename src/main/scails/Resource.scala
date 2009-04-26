@@ -8,7 +8,3 @@ trait Resource {
   val name : String
   def list : Elem
 }
-
-trait ResourceFactory {
-  def get() : Resource
-}

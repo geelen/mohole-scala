@@ -1,4 +1,4 @@
-package scails.demo
+package scails
 
 import Function.curried
 import java.util.Date

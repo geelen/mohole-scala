@@ -13,3 +13,11 @@ object Script extends ResourceFactory {
     }
   }
 }
+
+object ScriptResource extends Resource {
+  val name = "scripts"
+
+  def list = {
+    Utils.say("hello")
+  }
+}
