@@ -54,13 +54,10 @@ object App {
       // Look for a resource with the given URI path.
       // If the resource does not exist, then 404 Not Found.
       case _ => {
-        val path = Path.unapply(lol).get
-        logger.warning("path = " + path)
-        logger.info("redirects.contains(path) = " + redirects.contains(path))
+        // FIX #1 Apr 26, 2009 there must be a better way to do this.
         if (redirects.contains(path)) {
           Some(redirect(redirects.get(path).get))
         } else {
-          logger.info("wat")
           Some(OK(ContentType, "text/html") << transitional << ScailsHandler.go(redirects, resources)(lol))
         }
       }

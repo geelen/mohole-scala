@@ -68,10 +68,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="App.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scails/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.0">
+            <state line="56" column="17" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.7227834">
               <folding />
             </state>
           </provider>
@@ -89,16 +89,16 @@
       <file leaf-file-name="Script.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/mohole/resources/script/Script.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+            <state line="12" column="1" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buildj.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="buildj.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buildj.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="42" selection-start="10852" selection-end="10852" vertical-scroll-proportion="1.0">
+            <state line="298" column="13" selection-start="12809" selection-end="12809" vertical-scroll-proportion="-5.826923">
               <folding />
             </state>
           </provider>
@@ -751,9 +751,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scails/App.scala">
+    <entry file="file://$PROJECT_DIR$/buildj.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.0">
+        <state line="298" column="13" selection-start="12809" selection-end="12809" vertical-scroll-proportion="-5.826923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mohole/resources/script/Script.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -765,16 +772,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mohole/resources/script/Script.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scails/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buildj.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="42" selection-start="10852" selection-end="10852" vertical-scroll-proportion="1.0">
+        <state line="56" column="17" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.7227834">
           <folding />
         </state>
       </provider>
