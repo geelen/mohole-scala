@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/mohole/resources/script/Script.scala" afterPath="$PROJECT_DIR$/src/main/mohole/resources/script/Script.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scails/App.scala" afterPath="$PROJECT_DIR$/src/main/scails/App.scala" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/mohole/resources/script/data/Script.java" afterPath="$PROJECT_DIR$/src/main/mohole/resources/script/data/v000/Script.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scails/Resource.scala" afterPath="$PROJECT_DIR$/src/main/scails/Resource.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mohole.iws" afterPath="$PROJECT_DIR$/mohole.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scails/ScailsHandler.scala" afterPath="$PROJECT_DIR$/src/main/scails/ScailsHandler.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scails/demo/App.scala" afterPath="$PROJECT_DIR$/src/main/scails/App.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildj.xml" afterPath="$PROJECT_DIR$/buildj.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/mohole/App.scala" afterPath="$PROJECT_DIR$/src/main/mohole/App.scala" />
     </list>
@@ -71,7 +71,7 @@
       <file leaf-file-name="ScailsHandler.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scails/ScailsHandler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="7" column="32" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +107,43 @@
       <file leaf-file-name="App.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scails/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="6" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.39220184">
+            <state line="51" column="40" selection-start="2293" selection-end="2293" vertical-scroll-proportion="0.5940367">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamStreamApplication.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/StreamStreamApplication.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="101" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Option.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///opt/local/share/scala/src/scala-library-src.jar!/scala/Option.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="17" selection-start="4514" selection-end="4514" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Redirects.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scails/Redirects.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/request/Request.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="442" column="9" selection-start="13414" selection-end="13414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -730,43 +766,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///opt/local/share/scala/src/scala-library-src.jar!/scala/Function1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="6" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/servlet/HttpServletRequest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="6" selection-start="3559" selection-end="3559" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/request/Request.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="496" column="12" selection-start="14966" selection-end="14966" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/local/share/scala/src/scala-library-src.jar!/scala/Option.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mohole/resources/script/data/v000/Script.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="43" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-0.7307692">
@@ -788,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scails/Resource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scails/Utils.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="7" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
@@ -802,9 +794,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scails/ScailsHandler.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/mohole/resources/script/data/v000/Script.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="24" column="22" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scails/Resources.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scails/Redirects.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -816,16 +824,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scails/Resources.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scails/edge/JDO.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+        <state line="10" column="7" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scails/edge/JDO.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scails/Resource.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+        <state line="9" column="1" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -837,9 +845,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/request/Request.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="442" column="9" selection-start="13414" selection-end="13414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scails/ScailsHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="32" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/local/share/scala/src/scala-library-src.jar!/scala/Option.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="17" selection-start="4514" selection-end="4514" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Users/glen/src/slinky2/src/main/slinky/http/StreamStreamApplication.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="101" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scails/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="6" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.39220184">
+        <state line="51" column="40" selection-start="2293" selection-end="2293" vertical-scroll-proportion="0.5940367">
           <folding />
         </state>
       </provider>

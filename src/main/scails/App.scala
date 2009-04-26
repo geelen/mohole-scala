@@ -20,13 +20,6 @@ import slinky.http.response.StreamResponse.{response, statusLine}
 
 class App(redirects: Map[String, String], resources: Resources) extends StreamStreamServletApplication {
   import App._
-  /*
-  val application =
-    (app(_: Request[Stream])) or (req => {
-      implicit val r = req
-      NotFound << transitional << say("Where does it lie?")
-    })
-    */
 
   val application = new ServletApplication[Stream, Stream] {
     def application(implicit servlet: HttpServlet, servletRequest: HttpServletRequest, request: Request[Stream]) =
@@ -60,7 +53,14 @@ object App {
 
       // Look for a resource with the given URI path.
       // If the resource does not exist, then 404 Not Found.
-      case _ => Some(OK(ContentType, "text/html") << transitional << ScailsHandler.go(redirects, resources)(lol))
+      case _ => {
+        val path = Path.unapply(lol).get
+        if (redirects.contains(path)) {
+          Some(redirect(redirects.get(path).get))
+        } else {
+          Some(OK(ContentType, "text/html") << transitional << ScailsHandler.go(redirects, resources)(lol))
+        }
+      }
     }
   }
 }
